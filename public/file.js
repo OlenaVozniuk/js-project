@@ -1,5 +1,12 @@
-function min(a,b) {
-    return (a < b) ? a : b;
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
 }
 
-alert(min(3,4));
+let sum = 0;
+for(let key in salaries) {
+    sum += salaries[key];
+}
+
+alert(sum);
